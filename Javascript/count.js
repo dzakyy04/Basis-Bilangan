@@ -162,4 +162,22 @@ if (inp[0].className == "calcDec") {
             }
         })
     })
+    inp[1].addEventListener("input", function () {
+        inp[0].addEventListener("input", function () {
+            if (option[0].selected) {
+                inp[2].value = plusBin(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[1].selected) {
+                inp[2].value = minusBin(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[2].selected) {
+                inp[2].value = timesBin(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[3].selected) {
+                inp[2].value = divideBin(inp[0].value, inp[1].value);
+                remainder.style.display = "flex";
+                inp[3].value = remainderBin(inp[0].value, inp[1].value, inp[2].value);
+            }
+        })
+    })
 }
