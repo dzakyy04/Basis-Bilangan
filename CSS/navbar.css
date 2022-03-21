@@ -46,6 +46,7 @@ nav .logo a {
 
 nav .logo a:hover {
     color: cyan;
+    transition: .3s;
 }
 
 nav ul {
@@ -114,6 +115,8 @@ span {
 
 span i:hover {
     color: cyan;
+    text-shadow: 0 0 3px cyan;
+    transition: .3s;
 }
 
 @media screen and (max-width:900px) {

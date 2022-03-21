@@ -1,6 +1,5 @@
-const span = document.querySelector("span.hamburger");
 const parent = document.querySelector(".parent");
-const i = document.querySelector(".hamburger i")
-span.addEventListener("click", function () {
+const hamburger = document.querySelector(".hamburger i")
+hamburger.addEventListener("click", function () {
     parent.classList.toggle("slide");
 });
