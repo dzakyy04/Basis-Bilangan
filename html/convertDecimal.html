@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis Bilangan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/background.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/convert.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Dewa Sheva Dzaky</a>
+            </div>
+            <ul class="parent">
+                <li class="liParent"><a href="../index.html">home</a></li>
+                <li class="liParent">
+                    <a href="#">convert&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="convertDecimal.html">decimal</a></li>
+                        <li><a href="convertBinary.html">binary</a></li>
+                        <li><a href="convertOctal.html">octal</a></li>
+                        <li><a href="convertHexa.html">hexadecimal</a></li>
+                    </ul>
+                </li>
+                <li class="liParent">
+                    <a href="#">calculator&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="convertDecimal.html">decimal</a></li>
+                        <li><a href="convertBinary.html">binary</a></li>
+                        <li><a href="convertOctal.html">octal</a></li>
+                        <li><a href="convertHexa.html">hexadecimal</a></li>
+                    </ul>
+                </li class="liParent">
+                <li class="liParent"><a href="contact.html">contact</a></li>
+            </ul>
+            <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+        </div>
+    </nav>
+
+    <!-- Convert -->
+    <div class="convert">
+        <form class="form">
+            <label>
+                <h3>Decimal</h3>
+                <input type="number" class="decimal">
+            </label>
+            <label>
+                <h3>Binary</h3>
+                <input type="text" readonly value="">
+            </label>
+            <label>
+                <h3>Octal</h3>
+                <input type="text" readonly value="">
+            </label>
+            <label>
+                <h3>Hexa</h3>
+                <input type="text" readonly value="">
+            </label>
+        </form>
+    </div>
+
+    <!-- background -->
+    <div class="background">
+        <section class="sec1"></section>
+        <section class="sec2"></section>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../Javascript/background.js"></script>
+    <script src="../Javascript/navbar.js"></script>
+    <script src="../Javascript/convert.js"></script>
+</body>
+
+</html>

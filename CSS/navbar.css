@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    font-family: 'Poppins',
+        sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    user-select: none;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-shadow: 0 0 3px white;
+}
+
+
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+nav .container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 500;
+}
+
+nav .logo a {
+    font-size: 28px;
+}
+
+nav .logo a:hover {
+    color: cyan;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 8px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+        0 0 10px #66ffff;
+    transition: .3s;
+}
+
+nav ul ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: #222;
+    top: 80px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    height: 50px;
+    border-bottom: 1px solid #111;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul ul li a {
+    width: 100%;
+}
+
+span {
+    display: none;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+span i:hover {
+    color: cyan;
+}
+
+@media screen and (max-width:900px) {
+    nav .parent {
+        position: absolute;
+        top: 70px;
+        background-color: #222;
+        flex-direction: column;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: .3s;
+        box-shadow: 0 2px 5px #444;
+    }
+
+    nav .parent.slide {
+        transform: translateY(0%);
+        transition: .3s;
+    }
+
+    nav .parent li {
+        height: 50px;
+        width: 100%;
+        border-top: 1px solid #111;
+    }
+
+    nav .parent .liParent {
+        padding: 0 40px;
+    }
+
+    nav ul ul {
+        position: relative;
+        left: 15px;
+    }
+
+    nav ul li:hover ul {
+        top: 73px;
+    }
+
+    nav ul ul li {
+        border: none;
+    }
+
+    span {
+        display: flex;
+    }
+
+    .fa-angle-down {
+        transform: rotate(-90deg);
+    }
+}

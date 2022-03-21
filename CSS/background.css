@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -999;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.background p {
+    position: absolute;
+    pointer-events: none;
+    color: #fff;
+    animation: animate 5s linear infinite;
+    z-index: -99;
+}
+
+section p {
+    user-select: none;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+        display: none;
+    }
+}
