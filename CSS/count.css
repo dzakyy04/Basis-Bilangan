@@ -35,14 +35,6 @@ form label h3 {
     font-weight: 600;
 }
 
-form label select {
-    margin: auto;
-}
-
-form label option {
-    margin: auto;
-}
-
 form label input {
     width: 250px;
     text-transform: uppercase;
@@ -68,6 +60,26 @@ input[type=number]::-webkit-outer-spin-button {
 label.remainder {
     display: none;
     transition: 3s;
+}
+
+select {
+    margin: auto;
+    width: 50px;
+    height: 30px;
+    background-color: #222;
+    color: #eee;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+option {
+    margin: auto;
+    background-color: #222;
+    color: #eee;
+    margin: auto;
+    width: 50px;
+    height: 30px;
 }
 
 @media screen and (max-width: 500px) {
