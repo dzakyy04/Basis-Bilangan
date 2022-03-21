@@ -112,6 +112,49 @@ function remainderBin(num1, num2, num3) {
     return decToBin(binToDec(num1) - binToDec(num2) * binToDec(num3));
 }
 
+// Calculator Octal
+function plusOc(num1, num2) {
+    return decToOc(ocToDec(num1) + ocToDec(num2));
+}
+
+function minusOc(num1, num2) {
+    return decToOc(ocToDec(num1) - ocToDec(num2));
+}
+
+function timesOc(num1, num2) {
+    return decToOc(ocToDec(num1) * ocToDec(num2));
+}
+
+function divideOc(num1, num2) {
+    return parseInt(decToOc(ocToDec(num1) / ocToDec(num2)));
+}
+
+function remainderOc(num1, num2, num3) {
+    return decToOc(ocToDec(num1) - ocToDec(num2) * ocToDec(num3));
+}
+
+// Calculator hexadecimal
+function plusHex(num1, num2) {
+    return decToHex(hexToDec(num1) + hexToDec(num2));
+}
+console.log(plusHex(1, ));
+
+function minusHex(num1, num2) {
+    return decToHex(hexToDec(num1) - hexToDec(num2));
+}
+
+function timesHex(num1, num2) {
+    return decToHex(hexToDec(num1) * hexToDec(num2));
+}
+
+function divideHex(num1, num2) {
+    return parseInt(decToHex(hexToDec(num1) / hexToDec(num2)));
+}
+
+function remainderHex(num1, num2, num3) {
+    return decToHex(hexToDec(num1) - hexToDec(num2) * hexToDec(num3));
+}
+
 
 // Calculator
 const option = document.querySelectorAll("option");
@@ -177,6 +220,80 @@ if (inp[0].className == "calcDec") {
                 inp[2].value = divideBin(inp[0].value, inp[1].value);
                 remainder.style.display = "flex";
                 inp[3].value = remainderBin(inp[0].value, inp[1].value, inp[2].value);
+            }
+        })
+    })
+} else if (inp[0].className == "calcOc") {
+    inp[0].addEventListener("input", function () {
+        inp[1].addEventListener("input", function () {
+            if (option[0].selected) {
+                inp[2].value = plusOc(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[1].selected) {
+                inp[2].value = minusOc(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[2].selected) {
+                inp[2].value = timesOc(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[3].selected) {
+                inp[2].value = divideOc(inp[0].value, inp[1].value);
+                remainder.style.display = "flex";
+                inp[3].value = remainderOc(inp[0].value, inp[1].value, inp[2].value);
+            }
+        })
+    })
+    inp[1].addEventListener("input", function () {
+        inp[0].addEventListener("input", function () {
+            if (option[0].selected) {
+                inp[2].value = plusOc(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[1].selected) {
+                inp[2].value = minusOc(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[2].selected) {
+                inp[2].value = timesOc(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[3].selected) {
+                inp[2].value = divideOc(inp[0].value, inp[1].value);
+                remainder.style.display = "flex";
+                inp[3].value = remainderOc(inp[0].value, inp[1].value, inp[2].value);
+            }
+        })
+    })
+} else if (inp[0].className == "calcHex") {
+    inp[0].addEventListener("input", function () {
+        inp[1].addEventListener("input", function () {
+            if (option[0].selected) {
+                inp[2].value = plusHex(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[1].selected) {
+                inp[2].value = minusHex(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[2].selected) {
+                inp[2].value = timesHex(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[3].selected) {
+                inp[2].value = divideHex(inp[0].value, inp[1].value);
+                remainder.style.display = "flex";
+                inp[3].value = remainderHex(inp[0].value, inp[1].value, inp[2].value);
+            }
+        })
+    })
+    inp[1].addEventListener("input", function () {
+        inp[0].addEventListener("input", function () {
+            if (option[0].selected) {
+                inp[2].value = plusHex(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[1].selected) {
+                inp[2].value = minusHex(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[2].selected) {
+                inp[2].value = timesHex(inp[0].value, inp[1].value);
+                remainder.style.display = "none";
+            } else if (option[3].selected) {
+                inp[2].value = divideHex(inp[0].value, inp[1].value);
+                remainder.style.display = "flex";
+                inp[3].value = remainderHex(inp[0].value, inp[1].value, inp[2].value);
             }
         })
     })
