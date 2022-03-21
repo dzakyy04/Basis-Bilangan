@@ -2,7 +2,7 @@ body {
     overflow: hidden;
 }
 
-.convert {
+.count {
     position: absolute;
     display: flex;
     justify-content: center;
