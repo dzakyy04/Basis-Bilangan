@@ -106,11 +106,17 @@ nav ul ul li a {
 }
 
 span {
+    display: flex;
+    align-items: center;
+}
+
+span i {
     display: none;
     align-items: center;
     color: white;
-    font-size: 30px;
     cursor: pointer;
+    font-size: 30px;
+    text-shadow: 0 0 3px white;
 }
 
 span i:hover {
