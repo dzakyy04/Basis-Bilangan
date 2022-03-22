@@ -19,7 +19,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 20px;
 }
 
