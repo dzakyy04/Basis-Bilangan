@@ -137,7 +137,6 @@ function remainderOc(num1, num2, num3) {
 function plusHex(num1, num2) {
     return decToHex(hexToDec(num1) + hexToDec(num2));
 }
-console.log(plusHex(1, ));
 
 function minusHex(num1, num2) {
     return decToHex(hexToDec(num1) - hexToDec(num2));
@@ -148,7 +147,7 @@ function timesHex(num1, num2) {
 }
 
 function divideHex(num1, num2) {
-    return parseInt(decToHex(hexToDec(num1) / hexToDec(num2)));
+    return decToHex(parseInt((hexToDec(num1) / hexToDec(num2))));
 }
 
 function remainderHex(num1, num2, num3) {
@@ -276,6 +275,7 @@ if (inp[0].className == "calcDec") {
                 inp[2].value = divideHex(inp[0].value, inp[1].value);
                 remainder.style.display = "flex";
                 inp[3].value = remainderHex(inp[0].value, inp[1].value, inp[2].value);
+                console.log(inp[0].value);
             }
         })
     })
