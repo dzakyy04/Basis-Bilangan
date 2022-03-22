@@ -37,7 +37,7 @@ nav .logo {
     display: flex;
     align-items: center;
     user-select: none;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 nav .logo a {
