@@ -1,0 +1,102 @@
+body {
+    overflow: hidden;
+}
+
+.contact {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+    height: 90vh;
+    width: 100%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 0.8);
+    border-radius: 30px;
+    height: 80%;
+    width: 70%;
+    padding: 30px 50px;
+}
+
+.contact form .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact form .row label {
+    width: 48%;
+}
+
+.contact h4 {
+    color: #eee;
+}
+
+.contact input {
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.contact textarea {
+    padding: 5px 10px;
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(0, 177, 0);
+    color: white;
+    border: 0;
+    font-size: 15px;
+}
+
+button:active {
+    filter: brightness(110%);
+}
+
+@media screen and (max-width: 700px) {
+    .contact form {
+        height: 85%;
+        padding: 20px 20px;
+    }
+
+    .contact form .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .contact input {
+        margin-top: 0px;
+    }
+
+    .contact form .row label {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact input {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .contact textarea {
+        height: 70px;
+        font-size: 15px;
+    }
+}
