@@ -106,7 +106,7 @@ nav ul ul li a {
 }
 
 span {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
